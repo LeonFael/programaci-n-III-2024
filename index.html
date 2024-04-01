@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad Dorada</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!--Menu de navegacion-->
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Logo</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="Imagenes/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Propiedad Dorada</h1>
+                <p>
+                    Comprar o vender una casa puede ser una de las decisiones financieras más importantes de tu vida. Ya
+                    sea que estés buscando el hogar de tus sueños o quieras obtener el mejor precio por tu propiedad, es
+                    fundamental contar con el apoyo y la asesoría de expertos en el mercado inmobiliario. No te
+                    arriesgues a perder tiempo y dinero en una transacción sin la guía adecuada, confía en profesionales
+                    comprometidos en hacer de tu compra o venta de casa una experiencia satisfactoria y exitosa.
+                </p>
+                <a href="#" class="btn-1">Informacion</a>
+            </div>
+        </div>
+    </header>
+    <!--Seccion de informacion-->
+    <section class="direction container">
+        <p>Calle 84 A Bis # 86 A 12</p>
+        <p>leonfael@gmail.com</p>
+        <p>319 4263792</p>
+    </section>
+    <!--Seccion de nosotros-->
+    <section class="about container">
+        <div class="about-img">
+            <!--<img src="Imagenes/i1.jpg" alt="">-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZECahBDZEaw?si=1zzRMDdKZfNfEM5B"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="about-txt">
+            <h2>Nosotros</h2>
+            <p>
+                Somos una empresa inmobiliaria con años de experiencia en la compra, venta y alquiler de propiedades.
+                Nuestro equipo de profesionales está altamente capacitado para ayudarte a encontrar la casa de tus
+                sueños, ya sea que estés buscando una vivienda familiar, un apartamento en la ciudad o una propiedad
+                vacacional.
+
+                Nos apasiona ayudar a las personas a encontrar su hogar perfecto. Nos comprometemos a brindar un
+                servicio personalizado y de alta calidad a cada uno de nuestros clientes. Trabajamos con diligencia y
+                transparencia para que la experiencia de compra o venta de tu propiedad sea lo más fluida y exitosa
+                posible.
+            </p>
+            <a href="#" class="btn-1">Informacion</a>
+        </div>
+    </section>
+
+    <!--Contenido principal-->
+    <main class="information container">
+        <div class="information-1">
+            <h3>200</h3>
+            <p>Mansiones</p>
+        </div>
+        <div class="information-1">
+            <h3>175</h3>
+            <p>Casas</p>
+        </div>
+        <div class="information-1">
+            <h3>110</h3>
+            <p>Departamentos</p>
+        </div>
+        <div class="information-1">
+            <h3>26</h3>
+            <p>Casas de playa</p>
+        </div>
+    </main>
+
+    <!---->
+    <section class="house container">
+        <div class="house-1 txt">
+            <span>01</span>
+            <h3>Casa lorem</h3>
+            <p>Disponible</p>
+        </div>
+        <div class="house-2 txt">
+            <span>02</span>
+            <h3>Casa lorem</h3>
+            <p>Disponible</p>
+        </div>
+        <div class="house-3 txt">
+            <span>03</span>
+            <h3>Casa lorem</h3>
+            <p>Disponible</p>
+        </div>
+        <div class="house-4 txt">
+            <span>04</span>
+            <h3>Casa lorem</h3>
+            <p>Disponible</p>
+        </div>
+        <div class="house-5 txt">
+            <span>05</span>
+            <h3>Casa lorem</h3>
+            <p>Disponible</p>
+        </div>
+    </section>
+
+    <!--Pie de pagina-->
+    <footer class="footer container">
+        <div class="footer-content">
+            <div class="footer-form">
+                <h2>Contactanos</h2>
+                <form id='miFormulario'>
+                    <input class="campo" type="text" placeholder="Nombre">
+                    <input class="campo" type="email" placeholder="correo">
+                    <textarea class="campo" cols="30" rows="10" placeholder="Solicitud"></textarea>
+                    <input class="btn-2" type="submit" value="enviar">
+                </form>
+            </div>
+            <div class="footer-txt">
+                <h3>319 4263792</h3>
+                <p>leonfael@gmail.com</p>
+                <p>Calle 84 A Bis # 86 A 12</p>
+            </div>
+        </div>
+        <div class="footer-2">
+            <p>Tu hogar, nuestra pasión: la inmobiliaria que convierte tus sueños en realidad</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('miFormulario').addEventListener('submit', function (event) {
+            event.preventDefault(); // Evitar que el formulario se envíe de forma convencional
+
+            // Obtener los valores de los campos del formulario
+            const nombre = document.querySelector('input[type="text"]').value;
+            const correo = document.querySelector('input[type="email"]').value;
+            const solicitud = document.querySelector('textarea').value;
+
+            // Se muestra los valores de los campos del formulario
+            alert(`Se ha enviado la siguiente información:\nNombre: ${nombre}\nCorreo: ${correo}\nSolicitud: ${solicitud}`);
+        });
+    </script>
+
+
+
+</body>
+
+</html>
